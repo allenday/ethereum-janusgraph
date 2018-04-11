@@ -67,7 +67,7 @@ nodeCount = g.V().hasLabel('node').count().next()
 println(nodeCount)
 assert(nodeCount == 105529)
 
-edgeCount = g.E().hasLabel('transfer').count()
+edgeCount = g.E().hasLabel('transfer').count().next()
 println(edgeCount)
 assert(edgeCount == 241793)
 
