@@ -19,7 +19,7 @@ tx_value = mgmt.makePropertyKey('tx_value').dataType(Float.class).make()
 mgmt.buildIndex('byHashUnique', Vertex.class).addKey(hash).unique().buildCompositeIndex()
 
 // Relationships
-transfers = mgmt.makeEdgeLabel('transfer').multiplicity(SIMPLE).make()
+transfers = mgmt.makeEdgeLabel('transfer').multiplicity(MULTI).make()
 
 // Commit changes
 mgmt.commit()
